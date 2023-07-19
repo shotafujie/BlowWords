@@ -1,0 +1,119 @@
+*{margin:0;}
+body{
+  
+}
+.inline-block_test {
+    display: block;      /* インラインブロック要素にする */
+    background-color:  #ccc;    /* 背景色指定 */
+    height: 100vh;              /* 高さ指定 */
+    width: 50vw;
+  border:1px solid black;
+  margin:0;
+}
+.outline-block_test{
+  display: flex;      /* インラインブロック要素にする */
+    background-color:  #ccc;    /* 背景色指定 */
+    height: 100vh;              /* 高さ指定 */
+    width : 30vw;
+  margin:0;
+}
+
+/* ．fonttest{
+  font-family:"BIZ UDGothic";
+} */
+
+.container {
+  border: solid 1px black;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);  */
+  /* background-image:
+      url("sky.jpg");
+  background-size:cover; */
+}
+
+.container p {
+  left: 100%;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: marquee,color-change,blink;
+  /*アニメーションのクラス名*/
+  animation-timing-function: linear;
+  /*アニメーションのタイミング・進行割合の指定*/
+  animation-duration: 10s;
+  /*アニメーションの速度*/
+  animation-iteration-count: infinite;
+  /*アニメーションの動作回数*/
+  position: absolute;
+  display: inline-block;
+}
+
+.container p:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  /* 100% {
+    transform: translateY(-100%);
+  } */
+
+  from {
+    bottom: -100%;
+  }
+
+  99%,
+  to {
+    bottom: 100%;
+    transform:scale(3);
+  }
+}
+
+@keyframes color-change {
+  0%,99%,100%{
+    color:#ff1493;
+  }
+
+  25%{
+    color:#7fff00;
+  }
+  
+  50%{
+    color:#0091EA;
+  }
+  
+  75%{
+    color:#9400d3;
+  }
+}
+
+@keyframes blink{
+  80%{
+    color:#9400d3;
+  }
+  85%{
+    color:#0091EA;
+  }
+  90%{
+    color:#9400d3;
+  }
+  92%{
+    color:#0091EA;
+  }
+  94%{
+    color:#9400d3;
+  }
+  95%{
+    color:#0091EA;
+  }
+  97%{
+    color:#9400d3;
+  }
+  98%{
+    color:#0091EA;
+  }
+}
+
