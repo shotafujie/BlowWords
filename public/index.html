@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Blow Words</title>
-  <meta http-equiv="Content-Type" content="Blow Words">
-  <meta name= "description" content = "Blow Words" >
+  <link rel="icon" type="image/x-icon" href="BGs.ico">
+  <meta name= "description" content = "Blow Words">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap');
-</style>
+  <meta property="og:title" content="BlowWords">
+  <meta property="og:description" content="BlowWords: Your speech converted colorful Soap Bubbles ">
+  <meta property=”og:site_name” content=”BlowWords” />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blowwords.replit.app">
+  <meta property="og:image" content="icons/bg-blowwords.png">
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap" rel="stylesheet">
 </head>
-
   
 <body>
-  <div id="modal"></div>  
-  <button id="startButton">START!!</button>
-  <b id="description">STARTを押すとあなたの声が言葉に変わるよ！</b>
-      
+  <div id="modal"></div> 
+  <h1 id="title">Blow Words
+  <button id="startButton"><img id="micIcon" src="./microphone.png" alt="音声入力開始ボタン" width="30px"></button></h1>
   <div class="container"></div>
-  <div id="textLog"></div>
+  <div id="textLog">話した言葉がシャボン玉のように漂う楽しいアプリです。<br>マイクを押してなにか話してみよう！</div>
+  <div id="footer">made by<a href="https://fujiemon.dev">ふじえもん</a></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="script.js"></script>
   <script src="../index.js"></script>
 </body>
+  
 </html>
-
