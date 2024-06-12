@@ -21,6 +21,7 @@ function startRecognition() {
   logElement.innerHTML = "";
   recognition.interimResults = true;
   recognition.continuous = true;
+  recognition.lang = "ja-JP";
   micIcon.src="./microphone_rec.png";
   recognition.start();
   sendWordsToServer();
